@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            text-align: center;
+            padding: 4px;
+            justify-content: center;
+            margin-left: 500px;
+            margin-right: 500px;
+            box-shadow: 10px 10px 5px rgb(104, 100, 100);
+            border-style: outset;
+            height: 53vh;
+        }
+        #temp{
+            color: rgb(0, 47, 255);
+        }
+        #tempval{
+            font-weight: bold;
+            font-size: 40px;
+            width: 50px;
+            height: 40px;
+            text-align: center;
+        }
+        #submit{
+            background-color: rgb(240, 17, 17);
+            height: 30px;
+            color: white;
+            font-size: large;
+            border-style: none;
+            border-radius: 3px;
+            width: 6vw;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        #submit:hover{
+            background-color: rgb(233, 97, 97);
+            height: 31px;
+            width: 7vw;
+        }
+        label{
+            font-weight: bold;
+            font-size: larger;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="temp">Temperature <br> conversion:</h2><br>
+        <input type="text" id="tempval"><br><br>
+        <input type="radio" id="c to f" name="conv">
+        <label for="c to f">Celsius → farenheit</label><br><br>
+        <input type="radio" id="f to c" name="conv">
+        <label for="f to c">Fahrenheit → Celsius</label><br><br>
+        <button id="submit">Submit</button><br>
+        <h1 id="result"></h1>
+
+    </div>
+    <script src="tempconv.js"></script>
+</body>
+</html>
